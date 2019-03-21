@@ -6,6 +6,14 @@ With this script you can brute-force website logins via a pass-/userlist. Please
 This script can interact with webpages over the machanize python module, tries all the combination given in the user- and passlist. It will continue to check passwords, until it's redirected to a specific site.
 
 # How to use this script?
+First install the machanize module for this script
+```
+pip install mechanize
+```
+or
+```
+easy_install mechanize
+```
 # Step 1: Specify the path to your passlist:
 ```
 # Please set the path to your passlist
